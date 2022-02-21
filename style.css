@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --max-width: 1440px;
+    --min-width: 375px;
+    --quote_size : 28px;
+    /* text color */
+    --primary_clr_cyan : hsl(193, 38%, 86%);
+    /* heading and dice color and bg */
+    --primary_neon_green: hsl(150, 100%, 66%);
+    /* horizantal line or breakers color */
+    --neutral_grayish_blue:  hsl(217, 19%, 38%);
+    /* body background */
+    --body-bg: hsl(219, 18%, 22%); 
+   
+   
+}
+body{
+    max-width: var(--max-width);
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body-bg);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.app_container{
+    width: 40%;
+    min-height: 310px;
+    height: auto;
+    background-color: hsl(218, 22%, 32%);
+    border-radius: 0.5rem;
+}
+.card_wrapper{
+    margin: 2rem;
+    text-align: center;
+}
+.card_wrapper h4{
+    color: var(--primary_neon_green);
+    letter-spacing: 3px;
+    font-family: 'Manrope', sans-serif;
+}
+.advice_wrapper{
+    margin: 2rem auto;
+    text-align: center;
+    min-height: 100px;
+}
+.advice_wrapper p{
+    font-size: 28px;
+    font-weight: 800;
+    font-family:  'Manrope', sans-serif;
+    color: var(--primary_clr_cyan);
+}
+.breakers{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.breakers img{
+    width: 100%;
+    height: auto;
+
+}
+.dice_wrapper{
+    background-color: var(--primary_neon_green);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 1.5rem;
+    outline: none;
+    border: none;
+}
+.dice_wrapper img{
+    width: 70%;
+    height:auto;
+}
+.dice_wrapper:hover{
+    background-color:var(--primary_neon_green);
+    box-shadow:  0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;;
+}
+@media (max-width:600px){
+    .app_container{
+        width: 85%;
+    }
+    .breakers img{
+        margin-bottom: 1rem;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(226, 5%, 50%); }
