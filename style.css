@@ -21,6 +21,7 @@
    
 }
 body{
+    max-width: var(--max-width);
     width: 100%;
     height: 100vh;
     background-color: var(--body-bg);
@@ -84,6 +85,19 @@ body{
 .dice_wrapper img{
     width: 70%;
     height:auto;
+}
+@keyframes rotate_dice{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(180deg);
+
+    }
+}
+.dice_wrapper:hover{
+    animation-name: rotate_dice;
+    animation-duration: 0.2s;
 }
 .dice_wrapper:hover{
     background-color:var(--primary_neon_green);
